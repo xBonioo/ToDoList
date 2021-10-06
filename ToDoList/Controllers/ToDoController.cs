@@ -46,10 +46,10 @@ namespace ToDo.Controllers
         }
 
         // GET: ToDo/Edit/5
-        //public ActionResult Edit(int id)
-        //{
-        //    return View(_dbContext.ToDoes.FirstOrDefault(x => x.Id == id));
-        //}
+        public ActionResult Edit(int id)
+        {
+            return View(_toDoService.Edit(id));
+        }
 
         // POST: ToDo/Edit/5
         [HttpPost]
@@ -61,15 +61,15 @@ namespace ToDo.Controllers
         }
 
         // GET: ToDo/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View(_dbContext.ToDoes.FirstOrDefault(x => x.Id == id));
-        //}
+        public ActionResult Delete(int id)
+        {
+            return View(_toDoService.Delete(id));
+        }
 
         // POST: ToDo/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int id, ToDoDto toDoModels)
         {
             _toDoService.Delete(id);
             return RedirectToAction(nameof(Index));

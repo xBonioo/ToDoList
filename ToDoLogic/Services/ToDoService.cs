@@ -54,6 +54,10 @@ namespace ToDoLogic.Services
 
             return toDo.Id;
         }
+        public ToDoDb Edit(int id)
+        {
+            return _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
+        }
 
         public void Edit(int id, ToDoDto dto)
         {
@@ -63,7 +67,12 @@ namespace ToDoLogic.Services
             toDo.Description = dto.Description;
         }
 
-        public void Delete(int id)
+        public ToDoDb Delete(int id)
+        {
+            return _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void Delete(int id, ToDoDto toDoModels)
         {
             var toDo = _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
 
