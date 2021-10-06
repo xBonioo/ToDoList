@@ -9,3 +9,4 @@ F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.csproj.CoreCompileInputs
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.dll
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ref\ToDoLogic.dll
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.pdb
+F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.csproj.AssemblyReference.cache
