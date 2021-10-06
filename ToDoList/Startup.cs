@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,7 +27,8 @@ namespace ToDo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ToDoDbContext>();
+            services.AddDbContext<ToDoDbContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("Task")));
             services.AddScoped<ToDoSeeder>();
             services.AddScoped<ToDoService>();
             services.AddAutoMapper(this.GetType().Assembly);

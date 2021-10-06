@@ -9,9 +9,11 @@ namespace ToDoCommon.Entities
 {
     public class ToDoDbContext : DbContext
     {
-        private string _connectionString = "Server=localhost\\SQLEXPRESS;Database=ToDoDb;Trusted_Connection=True;";
-
         public DbSet<ToDoDb> ToDoes { get; set; }
+
+        public ToDoDbContext(DbContextOptions options) : base(options)
+        {
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -19,11 +21,6 @@ namespace ToDoCommon.Entities
                 .Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(64);
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionString);
         }
     }
 }
