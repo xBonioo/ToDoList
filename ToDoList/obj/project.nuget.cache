@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S2r6FT0OfW8wkUVi7LrS6xtwOVafSlmqoeHUKQL0mrL5TSMsbKOptK7skoa3k5Q/xUXPDCsAiPkVStTOgVVslg==",
+  "dgSpecHash": "mSVpTqUBMA3TYX1Meru4pdrAyeAe9mr9Sg/oe4+Z40SW96O6+nloTIxJqkr9GdHUoEYO+uHiIeFJ48gYTuOoUw==",
   "success": true,
-  "projectFilePath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDoList.csproj",
+  "projectFilePath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bonif\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bonif\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
