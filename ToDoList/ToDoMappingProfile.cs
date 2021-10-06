@@ -16,6 +16,11 @@ namespace ToDo
                 .ForMember(x => x.Name, n => n.MapFrom(c => c.Name))
                 .ForMember(x => x.Description, n => n.MapFrom(c => c.Description))
                 .ForMember(x => x.IsDone, n => n.MapFrom(c => c.IsDone));
+
+            CreateMap<ToDoDto, ToDoDb>()
+                .ForMember(x => x.Name, n => n.MapFrom(c => c.Name))
+                .ForMember(x => x.Description, n => n.MapFrom(c => c.Description))
+                .ForMember(x => x.IsDone, n => n.MapFrom(c => c.IsDone));
         }
     }
 }

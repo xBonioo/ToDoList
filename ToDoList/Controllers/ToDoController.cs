@@ -33,15 +33,15 @@ namespace ToDo.Controllers
         // GET: ToDo/Create
         public ActionResult Create()
         {
-            return base.View(new ToDoModel());
+            return View(new ToDoDb());
         }
 
         // POST: ToDo/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(ToDoDto toDoModel)
+        public ActionResult Create(ToDoDto dto)
         {
-            _toDoService.Create(toDoModel);
+            _toDoService.Create(dto);
             return RedirectToAction(nameof(Index));
         }
 
@@ -54,9 +54,9 @@ namespace ToDo.Controllers
         // POST: ToDo/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ToDoDto toDoModels)
+        public ActionResult Edit(int id, ToDoDto dto)
         {
-            _toDoService.Edit(id, toDoModels);
+            _toDoService.Edit(id, dto);
             return RedirectToAction(nameof(Index));
         }
 
@@ -69,9 +69,9 @@ namespace ToDo.Controllers
         // POST: ToDo/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, ToDoDto toDoModels)
+        public ActionResult Delete(ToDoDto dto)
         {
-            _toDoService.Delete(id);
+            _toDoService.Delete(dto);
             return RedirectToAction(nameof(Index));
         }
 

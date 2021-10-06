@@ -34,26 +34,14 @@ namespace ToDoLogic.Services
             return result;
         }
 
-        public int Create(ToDoDto dto)
+        public void Create(ToDoDto dto)
         {
             var toDo = _mapper.Map<ToDoDb>(dto);
 
-            int lastId;
-            if (_dbContext.ToDoes != null && !_dbContext.ToDoes.Any())
-            {
-                lastId = 1;
-            }
-            else
-            {
-                lastId = _dbContext.ToDoes.Max(x => x.Id) + 1;
-            }
-            toDo.Id = lastId;
-
             _dbContext.ToDoes.Add(toDo);
             _dbContext.SaveChanges();
-
-            return toDo.Id;
         }
+
         public ToDoDb Edit(int id)
         {
             return _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
@@ -65,6 +53,8 @@ namespace ToDoLogic.Services
 
             toDo.Name = dto.Name;
             toDo.Description = dto.Description;
+
+            _dbContext.SaveChanges();
         }
 
         public ToDoDb Delete(int id)
@@ -72,11 +62,12 @@ namespace ToDoLogic.Services
             return _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
         }
 
-        public void Delete(int id, ToDoDto toDoModels)
+        public void Delete(ToDoDto dto)
         {
-            var toDo = _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
+            var result = _mapper.Map<ToDoDb>(dto);
 
-            _dbContext.ToDoes.Remove(toDo);
+            _dbContext.ToDoes.Remove(result);
+            _dbContext.SaveChanges();
         }
 
         public void Done(int id)
@@ -84,6 +75,8 @@ namespace ToDoLogic.Services
             var toDo = _dbContext.ToDoes.FirstOrDefault(x => x.Id == id);
 
             toDo.IsDone = true;
+
+            _dbContext.SaveChanges();
         }
     }
 }
