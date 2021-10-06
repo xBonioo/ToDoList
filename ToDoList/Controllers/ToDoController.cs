@@ -25,7 +25,7 @@ namespace ToDoList.Controllers
         // GET: ToDoController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(toDoes.FirstOrDefault(x => x.Id == id));
         }
 
         // GET: ToDoController/Create
@@ -58,22 +58,20 @@ namespace ToDoList.Controllers
         // GET: ToDoController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(toDoes.FirstOrDefault(x => x.Id == id));
         }
 
         // POST: ToDoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, ToDoModel toDoModels)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            ToDoModel toDo = toDoes.FirstOrDefault(x => x.Id == id);
+
+            toDo.Name = toDoModels.Name;
+            toDo.Description = toDoModels.Description;
+
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: ToDoController/Delete/5
