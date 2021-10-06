@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ToDoCommon.Entities
+namespace ToDoLogic.Models
 {
-    public class ToDo
+    public class ToDoDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

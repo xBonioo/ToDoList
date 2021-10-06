@@ -9,7 +9,7 @@ using ToDoCommon.Entities;
 namespace ToDoCommon.Migrations
 {
     [DbContext(typeof(ToDoDbContext))]
-    [Migration("20211006110338_Init")]
+    [Migration("20211006132347_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace ToDoCommon.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ToDoCommon.Entities.ToDo", b =>
+            modelBuilder.Entity("ToDoCommon.Entities.ToDoDb", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

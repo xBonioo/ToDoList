@@ -10,3 +10,6 @@ F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.dll
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ref\ToDoLogic.dll
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.pdb
 F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.csproj.AssemblyReference.cache
+F:\Kamil\.Net\ToDo\ToDoLogic\bin\Debug\net5.0\ToDoCommon.dll
+F:\Kamil\.Net\ToDo\ToDoLogic\bin\Debug\net5.0\ToDoCommon.pdb
+F:\Kamil\.Net\ToDo\ToDoLogic\obj\Debug\net5.0\ToDoLogic.csproj.CopyComplete

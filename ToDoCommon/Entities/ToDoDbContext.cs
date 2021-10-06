@@ -11,11 +11,11 @@ namespace ToDoCommon.Entities
     {
         private string _connectionString = "Server=localhost\\SQLEXPRESS;Database=ToDoDb;Trusted_Connection=True;";
 
-        public DbSet<ToDo> ToDoes { get; set; }
+        public DbSet<ToDoDb> ToDoes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ToDo>()
+            modelBuilder.Entity<ToDoDb>()
                 .Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(64);

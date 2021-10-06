@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
-using ToDoList;
+using ToDo;
 
 #line default
 #line hidden
@@ -26,8 +26,22 @@ using ToDoLogic.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoLogic.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoCommon.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bea0094b4df7a694e5dcf56abb590b2f689c374", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8eadbecb14452c03e2fe002eeb3ab5f41af6b90a", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

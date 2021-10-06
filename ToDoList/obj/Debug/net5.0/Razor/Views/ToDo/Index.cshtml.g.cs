@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
-using ToDoList;
+using ToDo;
 
 #line default
 #line hidden
@@ -26,8 +26,22 @@ using ToDoLogic.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoLogic.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoCommon.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a9cc99f6ba7cd4c14d75b369fe79827f3a8fc254", @"/Views/ToDo/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bea0094b4df7a694e5dcf56abb590b2f689c374", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8eadbecb14452c03e2fe002eeb3ab5f41af6b90a", @"/Views/_ViewImports.cshtml")]
     public class Views_ToDo_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ToDoLogic.Models.ToDoModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -65,7 +79,7 @@ using ToDoLogic.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<h1>ToDo List</h1>\r\n\r\n<p>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9cc99f6ba7cd4c14d75b369fe79827f3a8fc2543555", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9cc99f6ba7cd4c14d75b369fe79827f3a8fc2543874", async() => {
                 WriteLiteral("Create New");
             }
             );

@@ -150,3 +150,5 @@ F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ref\ToDo.dll
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDo.pdb
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDo.genruntimeconfig.cache
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDo.csproj.CopyComplete
+F:\Kamil\.Net\ToDo\ToDoList\bin\Debug\net5.0\AutoMapper.dll
+F:\Kamil\.Net\ToDo\ToDoList\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

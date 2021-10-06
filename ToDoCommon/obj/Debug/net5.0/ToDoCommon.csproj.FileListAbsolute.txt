@@ -4,7 +4,6 @@ F:\Kamil\.Net\ToDo\ToDoCommon\bin\Debug\net5.0\ToDoCommon.runtimeconfig.dev.json
 F:\Kamil\.Net\ToDo\ToDoCommon\bin\Debug\net5.0\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\bin\Debug\net5.0\ref\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\bin\Debug\net5.0\ToDoCommon.pdb
-F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.csproj.AssemblyReference.cache
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.GeneratedMSBuildEditorConfig.editorconfig
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.AssemblyInfoInputs.cache
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ref\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.pdb
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.genruntimeconfig.cache
+F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.csproj.AssemblyReference.cache

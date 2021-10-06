@@ -18,7 +18,7 @@ namespace ToDoCommon.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ToDoCommon.Entities.ToDo", b =>
+            modelBuilder.Entity("ToDoCommon.Entities.ToDoDb", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

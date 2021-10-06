@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
-using ToDoList;
+using ToDo;
 
 #line default
 #line hidden
@@ -26,8 +26,22 @@ using ToDoLogic.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoLogic.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "F:\Kamil\.Net\ToDo\ToDoList\Views\_ViewImports.cshtml"
+using ToDoCommon.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8d364f0cd177809479128bcc8a78bbdbae02d4c", @"/Views/ToDo/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bea0094b4df7a694e5dcf56abb590b2f689c374", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8eadbecb14452c03e2fe002eeb3ab5f41af6b90a", @"/Views/_ViewImports.cshtml")]
     public class Views_ToDo_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ToDoLogic.Models.ToDoModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -100,9 +114,9 @@ using ToDoLogic.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8d364f0cd177809479128bcc8a78bbdbae02d4c5417", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8d364f0cd177809479128bcc8a78bbdbae02d4c5736", async() => {
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-danger\" /> |\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8d364f0cd177809479128bcc8a78bbdbae02d4c5764", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8d364f0cd177809479128bcc8a78bbdbae02d4c6083", async() => {
                     WriteLiteral("Back to List");
                 }
                 );
