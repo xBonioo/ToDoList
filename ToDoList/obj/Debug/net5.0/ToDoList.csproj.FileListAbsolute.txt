@@ -117,3 +117,4 @@ F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\Razor\Views\ToDo\Index.cshtml.g.cs
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\Razor\Views\ToDo\Create.cshtml.g.cs
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\Razor\Views\ToDo\Details.cshtml.g.cs
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\Razor\Views\ToDo\Edit.cshtml.g.cs
+F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\Razor\Views\ToDo\Delete.cshtml.g.cs

@@ -16,25 +16,25 @@ namespace ToDoList.Controllers
             new ToDoModel(){ Id = 2, Name = "Secound test ToDo", Description = "Godzina 12:00", IsDone = false}
         };
         
-        // GET: ToDoController
+        // GET: ToDo
         public ActionResult Index()
         {
-            return View(toDoes);
+            return View(toDoes.Where(x => !x.IsDone));
         }
 
-        // GET: ToDoController/Details/5
+        // GET: ToDo/Details/5
         public ActionResult Details(int id)
         {
             return View(toDoes.FirstOrDefault(x => x.Id == id));
         }
 
-        // GET: ToDoController/Create
+        // GET: ToDo/Create
         public ActionResult Create()
         {
             return View(new ToDoModel());
         }
 
-        // POST: ToDoController/Create
+        // POST: ToDo/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(ToDoModel toDoModel)
@@ -55,13 +55,13 @@ namespace ToDoList.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: ToDoController/Edit/5
+        // GET: ToDo/Edit/5
         public ActionResult Edit(int id)
         {
             return View(toDoes.FirstOrDefault(x => x.Id == id));
         }
 
-        // POST: ToDoController/Edit/5
+        // POST: ToDo/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, ToDoModel toDoModels)
@@ -74,25 +74,32 @@ namespace ToDoList.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: ToDoController/Delete/5
+        // GET: ToDo/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(toDoes.FirstOrDefault(x => x.Id == id));
         }
 
-        // POST: ToDoController/Delete/5
+        // POST: ToDo/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, ToDoModel toDoModel)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            ToDoModel toDo = toDoes.FirstOrDefault(x => x.Id == id);
+
+            toDoes.Remove(toDo);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: ToDo/Done/5
+        public ActionResult Done(int id, ToDoModel toDoModel)
+        {
+            ToDoModel toDo = toDoes.FirstOrDefault(x => x.Id == id);
+
+            toDo.IsDone = true;
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
