@@ -20,10 +20,10 @@ namespace ToDoLogic.Services
             _mapper = mapper;
         }
 
-        public List<ToDoModel> GetNotDone()
+        public List<ToDoDto> GetNotDone()
         {
             var toDoes = _dbContext.ToDoes.Where(x => !x.IsDone).ToList();
-            var toDoDtos = _mapper.Map<List<ToDoModel>>(toDoes);
+            var toDoDtos = _mapper.Map<List<ToDoDto>>(toDoes);
             return toDoDtos;
         }
 
