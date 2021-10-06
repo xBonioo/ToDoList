@@ -39,7 +39,18 @@ namespace ToDoList.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ToDoModel toDoModel)
         {
-            toDoModel.Id = toDoes.Count + 1;
+            int lastId;
+
+            if (toDoes != null && !toDoes.Any())
+            {
+                lastId = 1;
+            }
+            else
+            {
+                lastId = toDoes.Max(x => x.Id) + 1;
+            }
+
+            toDoModel.Id = lastId;
             toDoes.Add(toDoModel);
             return RedirectToAction(nameof(Index));
         }
