@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CiDfyfS+PbXHHTmycOR6aZXefn2QWaI8tWyF5XNnPUcpOegxZz9PkaCd205tkUkY1Qh7+re/5vqyOCZgJCOIOw==",
+  "dgSpecHash": "465XN1V+AUPvZ+9eSfUdCAIny3jsVYPP06d/n2lfkUIsruF0olvsGcoeanILss6x6OByIbGhllKeUZz7mWrC3A==",
   "success": true,
-  "projectFilePath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDo.csproj",
+  "projectFilePath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bonif\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\bonif\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
