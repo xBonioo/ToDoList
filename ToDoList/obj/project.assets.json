@@ -7263,9 +7263,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDo.csproj",
-      "projectName": "ToDo",
-      "projectPath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDo.csproj",
+      "projectUniqueName": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDoList.csproj",
+      "projectName": "ToDoList",
+      "projectPath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\ToDoList.csproj",
       "packagesPath": "C:\\Users\\bonif\\.nuget\\packages\\",
       "outputPath": "F:\\Kamil\\.Net\\ToDo\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
