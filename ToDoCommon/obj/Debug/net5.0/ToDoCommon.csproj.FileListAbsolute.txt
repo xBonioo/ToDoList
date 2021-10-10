@@ -12,3 +12,4 @@ F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ref\ToDoCommon.dll
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.pdb
 F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.genruntimeconfig.cache
+F:\Kamil\.Net\ToDo\ToDoCommon\obj\Debug\net5.0\ToDoCommon.csproj.AssemblyReference.cache
