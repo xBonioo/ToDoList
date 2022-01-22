@@ -1,4 +1,4 @@
-# ToDoList ASP.NET MVC
+# ToDoList ASP.NET MVC with Entity Framework
 List:
 ![alt text](https://i.imgur.com/rhoHbUy.jpg)
 
