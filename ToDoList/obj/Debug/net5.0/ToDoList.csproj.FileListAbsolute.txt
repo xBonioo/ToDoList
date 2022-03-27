@@ -7,7 +7,6 @@ F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDoList.MvcApplicationPartsAssembl
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDoList.RazorAssemblyInfo.cache
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDoList.RazorAssemblyInfo.cs
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\staticwebassets\ToDoList.StaticWebAssets.Manifest.cache
-F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\staticwebassets\ToDoList.StaticWebAssets.xml
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\scopedcss\bundle\ToDoList.styles.css
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDoList.TagHelpers.input.cache
 F:\Kamil\.Net\ToDo\ToDoList\obj\Debug\net5.0\ToDoList.TagHelpers.output.cache
